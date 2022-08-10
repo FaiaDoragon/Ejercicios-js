@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <script>
+        var letraDNI = "";
+        do {
+            var DNI = prompt("Introdusca su DNI")
+            if (Number(DNI) == DNI) {
+                if ( DNI >= 0 && DNI <= 99999999) {
+                    resto = DNI % 23
+                    switch (resto) {
+                        case 0: Letra = "T";
+                        break;
+                        case 1: Letra = "R";
+                        break;
+                        case 2: Letra = "W";
+                        break;
+                        case 3: Letra = "A";
+                        break;
+                        case 4: Letra = "G";
+                        break;
+                        case 5: Letra = "M";
+                        break;
+                        case 6: Letra = "Y";
+                        break;
+                        case 7: Letra = "F";
+                        break;
+                        case 8: Letra = "P";
+                        break;
+                        case 9: Letra = "D";
+                        break;
+                        case 10: Letra = "X";
+                        break;
+                        case 11: Letra = "B"
+                        break;
+                        case 12: Letra = "N"
+                        break;
+                        case 13: Letra = "J"
+                        break;
+                        case 14: Letra = "Z"
+                        break;
+                        case 15: Letra = "S"
+                        break;
+                        case 16: Letra = "Q"
+                        break;
+                        case 17: Letra = "V"
+                        break;
+                        case 18: Letra = "H"
+                        break;
+                        case 19: Letra = "L"
+                        break;
+                        case 20: Letra = "C"
+                        break;
+                        case 21: Letra = "K"
+                        break;
+                        case 22: Letra = "e"
+                    }
+                    alert ("DNI: " + DNI + ", Letra: " + Letra);
+                } else {
+                    alert(DNI + "No es un DNI valido");
+                }
+            } else {
+                if (DNI != undefined) {
+                    alert(DNI + " No es un numero");
+                }
+            }
+        } while (DNI != undefined);
+        document.write(letraDNI);
+    </script>
+</body>
+</html>

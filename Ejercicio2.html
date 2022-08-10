@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+    <script>
+        // 2. Pide una nota(número).Muestra la calificación según la nota:
+        // 0 - 3: Muy deficiente
+        // 3 - 5: Insuficiente
+        // 5 - 6: Suficiente
+        // 6 - 7: Bien
+        // 7 - 9: Notable
+        // 9 - 10: Sobresaliente
+        var Nota = prompt("Introduce tu calificacion");
+        if (Number(Nota) == Nota) {
+            if (nota > 0 && nota <= 10) {
+                if (Number(Nota) <= 3) {
+                    alert("Muy deficiente");
+                } else if (Number(Nota) <= 5) {
+                    alert("Insuficiente");
+                } else if (Number(Nota) <= 6) {
+                    alert("Suficiente");
+                } else if (Number(Nota) <= 7) {
+                    alert("Bien");
+                } else if (Number(Nota) <= 9) {
+                    alert("Notable");
+                } else if (Number(Nota) <= 10) {
+                    alert("Sobresaliente");
+                }
+            } else {
+                alert("Nota Erronea")
+            }
+        }
+    </script>
+</body>
+
+</html>
