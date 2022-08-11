@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+
+<body>
+    <script>
+        // 8. Crea script para generar pirámide siguiente con los números del 1 al número que indique el usuario(no mayor de 50) :
+        // 1
+        // 12
+        // 123
+        // 1234
+        // 12345
+        // 123456
+
+        var num = prompt("Introdusca un número no mayor de 50");
+        if (Number(num) == num) {
+            if (num > 0 && num <= 50) {
+                var rep, i;
+                for (i = 0; i <= num; i++) {
+                    for (rep = 1; rep <= i; rep++) {
+                        document.write(rep);
+                    }
+                    document.write("<br>");
+                }
+            } else {
+                alert("No ha introducido un numero valido");
+            }
+        } else {
+            alert("No ha introducido un caracter numero");
+        }
+    </script>
+</body>
+
+</html>
